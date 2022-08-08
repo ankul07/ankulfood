@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{> header}}
+</head>
+<body>
+{{> navbar  data = navschemas}}
+    <section class="order" id="order">
+
+        <h1 class="heading"> <span>order</span> now </h1>
+    
+        <div class="row">
+            
+            <div class="image">
+                <img src="images/order-img.jpg" alt="">
+            </div>
+    
+            <form action="/register" method="POST">
+    
+                <div class="inputBox">
+                    <input type="text" placeholder="name" name="username">
+                    <input type="email" placeholder="email" name="email">
+                </div>
+    
+                <div class="inputBox">
+                    <input type="number" placeholder="number" name="number">
+                    <input type="text" placeholder="food name" name="foodname">
+                </div>
+    
+                <textarea placeholder="address" name="query" id="" cols="30" rows="10"></textarea>
+    
+                <input type="submit" value="order now" class="btn">
+    
+            </form>
+    
+        </div>
+    
+    </section>
+    {{> footer}}
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> header}}
+</head>
+<body>
+    {{> navbar  data = navschemas}}
+    <section class="popular" id="popular">
+
+        <h1 class="heading"> most <span>popular</span> foods </h1>
+    
+        <div class="box-container">
+            {{#each popular}}
+            <div class="box">
+                <span class="price"> {{this.price}}</span>
+                <img src="{{this.images}}" alt="">
+                <h3>{{this.title}}</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="/order" class="btn">order now</a>
+
+                
+                
+                
+            </div>
+           
+            {{/each}}
+            {{!-- <div class="box">
+                <span class="price"> $5 - $20 </span>
+                <img src="images/p-2.jpg" alt="">
+                <h3>tasty cakes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="/order" class="btn">order now</a>
+            </div>
+            <div class="box">
+                <span class="price"> $5 - $20 </span>
+                <img src="images/p-3.jpg" alt="">
+                <h3>tasty sweets</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="/order" class="btn">order now</a>
+            </div>
+            <div class="box">
+                <span class="price"> $5 - $20 </span>
+                <img src="images/p-4.jpg" alt="">
+                <h3>tasty cupcakes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="/order" class="btn">order now</a>
+            </div>
+            <div class="box">
+                <span class="price"> $5 - $20 </span>
+                <img src="images/p-5.jpg" alt="">
+                <h3>cold drinks</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="/order" class="btn">order now</a>
+            </div>
+            <div class="box">
+                <span class="price"> $5 - $20 </span>
+                <img src="images/p-6.jpg" alt="">
+                <h3>cold ice-cream</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="/order" class="btn">order now</a>
+            </div> --}}
+    
+        </div>
+         <ul class="pagination">
+             <li><a href="#">Prev</a></li>
+             <li><a href="#">1</a></li>
+             <li><a href="#">2</a></li>
+             <li><a href="#">3</a></li>
+             <li><a href="#">4</a></li>
+             <li><a href="#">Next</a></li>
+
+         </ul>
+    
+    </section>
+    {{> footer}}
+    <script src="js/script.js"></script>
+</body>
+</html>
